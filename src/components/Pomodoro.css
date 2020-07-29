@@ -1,5 +1,5 @@
 .pomodoro {
-  margin-bottom: 3rem;
+  margin-bottom: 15rem;
   height: 20rem;
   text-align: center;
   color: white;
@@ -8,10 +8,30 @@
 h2 {
   font-size: 1.5rem;
   font-family: "Yatra One", cursive;
-  color: #02c39a;
+  color: #ffffff;
   letter-spacing: 0.2rem;
   font-style: inherit;
   font-weight: 300;
+}
+
+.minute-button {
+}
+.minute-button button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.4rem;
+  border-style: none;
+  color: white;
+  background-color: #fe5f55;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.input {
+  margin-top: 1rem;
+}
+
+.input input {
+  height: 1.8rem;
 }
 
 .timer {
@@ -31,7 +51,7 @@ h2 {
   margin: 0.3rem;
   color: white;
   border-style: none;
-  background-color: #02c39a;
+  background-color: #4f5d75;
   cursor: pointer;
   border-radius: 5px;
   border-left: 0.4rem solid #ff6b6b;
@@ -39,4 +59,32 @@ h2 {
 
 button:hover {
   background-color: #ff6b6b;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .timer {
+    font-size: 7rem;
+  }
+
+  .buttons button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 0.6rem;
+  }
+  .timer {
+    font-size: 7rem;
+  }
+
+  .buttons button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
 }
