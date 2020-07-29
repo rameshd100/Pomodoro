@@ -14,8 +14,6 @@ h2 {
   font-weight: 300;
 }
 
-.minute-button {
-}
 .minute-button button {
   font-size: 1rem;
   padding: 0.5rem;
@@ -32,6 +30,7 @@ h2 {
 
 .input input {
   height: 1.8rem;
+  border: 3px solid #fe5f55;
 }
 
 .timer {
@@ -86,5 +85,40 @@ button:hover {
   .buttons button {
     font-size: 1rem;
     padding: 0.6rem 1rem;
+  }
+}
+
+footer {
+  margin-top: 13.7rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer i {
+  color: red;
+  animation-name: heartFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+@keyframes heartFadeInOut {
+  0% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
   }
 }

@@ -4,6 +4,7 @@ import "./Pomodoro.css";
 const Pomodoro = () => {
   const [title, setTitle] = useState("It's Your time, make it count!".toUpperCase());
   const [timeLeft, setTimeLeft] = useState(10 * 60);
+
   const intervelRef = useRef(null);
   // Functions
 
@@ -79,11 +80,18 @@ const Pomodoro = () => {
       </div>
       <div className="buttons">
         <button onClick={startTimer}>Start</button>
+
         <button onClick={stopTimer} className="stop">
           Stop
         </button>
+
         <button onClick={resetTimer}>Restart</button>
       </div>
+      <footer>
+        <span>
+          &copy; Made with <i class="fas fa-heart"></i> by <a href="www.rameshdahal.com">Ramesh Dahal</a>
+        </span>
+      </footer>
     </div>
   );
 };
