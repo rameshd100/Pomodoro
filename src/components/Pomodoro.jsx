@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./Pomodoro.css";
 
 const Pomodoro = () => {
-  const [title, setTitle] = useState("Let the countdown begain".toUpperCase());
+  const [title, setTitle] = useState("It's Your time make it count".toUpperCase());
   const [timeLeft, setTimeLeft] = useState(30 * 60);
   const intervelRef = useRef(null);
   // Functions
@@ -46,7 +46,9 @@ const Pomodoro = () => {
       </div>
       <div className="buttons">
         <button onClick={startTimer}>Start</button>
-        <button onClick={stopTimer}>Stop</button>
+        <button onClick={stopTimer} className="stop">
+          Stop
+        </button>
         <button onClick={resetTimer}>Restart</button>
       </div>
     </div>

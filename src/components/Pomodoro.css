@@ -1,0 +1,42 @@
+.pomodoro {
+  margin-bottom: 3rem;
+  height: 20rem;
+  text-align: center;
+  color: white;
+  font-family: "Yatra One", cursive;
+}
+h2 {
+  font-size: 1.5rem;
+  font-family: "Yatra One", cursive;
+  color: #02c39a;
+  letter-spacing: 0.2rem;
+  font-style: inherit;
+  font-weight: 300;
+}
+
+.timer {
+  font-size: 9rem;
+  margin-bottom: 1.5rem;
+}
+.timer span {
+  letter-spacing: 0.2rem;
+  margin: 0.2rem;
+}
+.buttons {
+}
+
+.buttons button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.3rem;
+  margin: 0.3rem;
+  color: white;
+  border-style: none;
+  background-color: #02c39a;
+  cursor: pointer;
+  border-radius: 5px;
+  border-left: 0.4rem solid #ff6b6b;
+}
+
+button:hover {
+  background-color: #ff6b6b;
+}
